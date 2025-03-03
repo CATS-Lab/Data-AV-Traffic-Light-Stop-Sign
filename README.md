@@ -27,6 +27,7 @@ This dataset is derived from the Waymo Motion dataset and focuses on capturing t
 
 The directory structure of this repository is as follows:
 
+```
 .
 ├── interactions_with_stop_sign
 │ ├── four_way_stops
@@ -41,6 +42,7 @@ The directory structure of this repository is as follows:
 │ ├── stops_at_traffic_light
 │ └── straight_proceeds_at_traffic_light
 └── README.md
+```
 
 # Data Structure
 
