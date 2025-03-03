@@ -1,4 +1,4 @@
-# Github dataset README.md
+# Interaction Data of Autonomous Vehicles with Traffic Lights and Signs Based on Waymo Motion Open Dataset
 
 This dataset is derived from the Waymo Motion dataset and focuses on capturing the interactions between autonomous vehicles (AVs) and traffic control devices such as traffic lights and stop signs. It addresses a critical gap by providing real-world trajectory data that reflects how AVs interpret and respond to traffic control signals, supporting research in AV behavior modeling, traffic simulation, and the design of intelligent transportation systems.
 
@@ -48,19 +48,18 @@ The directory structure of this repository is as follows:
 
 The structure of the AV-traffic light interaction data is as follows:
 
-| Attribute            | Unit  | Description                                                                                                                                                                                                                                  |
-| -------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AV_speed             | m/s   | The raw speed of the AV.                                                                                                                                                                                                                     |
-| AV_x                 | m     | The x-coordinate of the AV in the coordinate system defined by Waymo dataset.                                                                                                                                                                |
-| AV_y                 | m     | The y-coordinate of the AV in the coordinate system defined by Waymo dataset.                                                                                                                                                                |
-| AV_acc               | m/s^2 | The raw acceleration of the AV.                                                                                                                                                                                                              |
-| AV_distance_to_light | m     | The Euclidean distance between the current position of the AV and the controlling traffic light (stop line).                                                                                                                                 |
-| nearest_light_x      | m     | The x-coordinate of the the controlling traffic light in the same coordinate system.                                                                                                                                                         |
-| nearest_light_y      | m     | The y-coordinate of the the controlling traffic light in the same coordinate system.                                                                                                                                                         |
-| nearest_light_state  | -     | The state of the controlling traffic light, encoded as follows: **0**: unknown **1**: arrow red **2**: arrow yellow **3**: arrow green **4**: circle red **5**: circle yellow **6**: circle green **7**: flashing red **8**: flashing yellow |
-
-| AV_speed_enhanced | m/s | The denoised speed of the AV, which helps reduce measurement noise. |
-| AV_acc_enhanced | m/s^2 | The denoised acceleration of the AV, which helps reduce the effects of noise and discrete differentiation. |
+| Attribute            | Unit  | Description                                                                                                                                                                                                                                                                 |
+| -------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AV_speed             | m/s   | The raw speed of the AV.                                                                                                                                                                                                                                                    |
+| AV_x                 | m     | The x-coordinate of the AV in the coordinate system defined by the Waymo dataset.                                                                                                                                                                                           |
+| AV_y                 | m     | The y-coordinate of the AV in the coordinate system defined by the Waymo dataset.                                                                                                                                                                                           |
+| AV_acc               | m/s^2 | The raw acceleration of the AV.                                                                                                                                                                                                                                             |
+| AV_distance_to_light | m     | The Euclidean distance between the current position of the AV and the controlling traffic light (stop line).                                                                                                                                                                |
+| nearest_light_x      | m     | The x-coordinate of the controlling traffic light in the same coordinate system.                                                                                                                                                                                            |
+| nearest_light_y      | m     | The y-coordinate of the controlling traffic light in the same coordinate system.                                                                                                                                                                                            |
+| nearest_light_state  | -     | The state of the controlling traffic light, encoded as follows:<br><br>**0**: unknown<br>**1**: arrow red<br>**2**: arrow yellow<br>**3**: arrow green<br>**4**: circle red<br>**5**: circle yellow<br>**6**: circle green<br>**7**: flashing red<br>**8**: flashing yellow |
+| AV_speed_enhanced    | m/s   | The denoised speed of the AV, which helps reduce measurement noise.                                                                                                                                                                                                         |
+| AV_acc_enhanced      | m/s^2 | The denoised acceleration of the AV, which helps reduce the effects of noise and discrete differentiation.                                                                                                                                                                  |
 
 The structure of the AV-stop sign interaction data is as follows:
 
